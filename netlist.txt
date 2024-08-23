@@ -1,0 +1,14 @@
+Net Conn type fanout fanin fanin1 fanin2
+1 gat inpt 1 0 - -
+2 gat inpt 1 0 - -
+3 gat inpt 1 0 - -
+4 gat inpt 1 0 - -
+5 gat inpt 1 0 - -
+6 gat and 1 2 1 2
+7 gat or 2 2 3 4
+8 gat not  1 1 5 -
+9 fan from 7 0 - -
+10 fan from 7 0 - -
+11 gat xnor 1 2 9 6
+12 gat nand 1 2 10 8
+13 gat nor 0 2 11 12
